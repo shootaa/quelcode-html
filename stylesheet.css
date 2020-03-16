@@ -54,8 +54,8 @@
   position: relative;
 }
 
-.top-container p {
-  width: 650px;
+.top-container h1 {
+  width: 660px;
   height: 105px;
   position: absolute;
   top: 274px;
