@@ -45,7 +45,7 @@
 }
 
 .top-container {
-  background-image: url("/Users/shota/Documents/AdobeStock_199226712/AdobeStock_199226712 (1)/AdobeStock_199226712.png");
+  background-image: url("quelcode_task01/home_top/home_top.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -76,7 +76,7 @@
 .proposal {
   position: relative;
   height: 560px;
-  background-image: url(/Users/shota/Documents/AdobeStock_189860956/AdobeStock_189860956.png);
+  background-image: url("quelcode_task01/concept/concept.png");
   background-position-x: 88px;
   background-repeat: no-repeat;
   background-size: 560px 560px;
@@ -130,6 +130,14 @@
   opacity: 1;
 }
 
+.news a {
+  position: absolute;
+  top: 456px;
+  left: 0px;
+  right: 0px;
+  text-decoration: none;
+}
+
 .furnitures {
   position: relative;
   text-align: center;
@@ -154,7 +162,7 @@
   left: 96px;
   width: 320px;
   height: 320px;
-  background-image: url("/Users/shota/Documents/AdobeStock_59829158_Preview/AdobeStock_59829158_Preview.png");
+  background-image: url("quelcode_task01/news01/news01.png");
   background-size: 320px 320px;
 }
 
@@ -164,7 +172,7 @@
   left: 480px;
   width: 320px;
   height: 320px;
-  background-image: url("/Users/shota/Documents/AdobeStock_74141361/AdobeStock_74141361.png");
+  background-image: url("quelcode_task01/news02/news02.png");
   background-size: 320px 320px;
 }
 
@@ -174,7 +182,7 @@
   left: 864px;
   width: 320px;
   height: 320px;
-  background-image: url("/Users/shota/Documents/AdobeStock_221963447 (1)/AdobeStock_221963447.png");
+  background-image: url("quelcode_task01/news03/news03.png");
   background-size: 320px 320px;
 }
 
@@ -317,7 +325,9 @@
 .recruit-view {
   position: absolute;
   top: 207px;
-  left: 584.5px;
+  left: 0px;
+  right: 0px;
+  text-decoration: none;
   font-size: 18px;
   font-size: 15px;
 }
