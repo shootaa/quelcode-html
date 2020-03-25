@@ -11,11 +11,6 @@ $regular_font: Noto Sans;
 .wrapper {
   overflow: hidden;
 }
-.header-container {
-  width: 100%;
-  height: 56px;
-  margin-bottom: 18px;
-}
 .header-left {
   margin-top: 16px;
   margin-left: 96px;
@@ -26,11 +21,6 @@ $regular_font: Noto Sans;
 .header-right {
   display: flex;
   justify-content: space-between;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
   margin-left: 787px;
   margin-right: 96px;
 
@@ -59,7 +49,6 @@ $regular_font: Noto Sans;
 }
 .top-container {
   background-image: url("quelcode_task01/home_top/home_top.png");
-  margin-right: 0px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -82,6 +71,8 @@ $regular_font: Noto Sans;
 
 .proposal {
   position: relative;
+  padding-top: 240px;
+  padding-left: 704px;
   height: 560px;
   background-image: url("quelcode_task01/concept/concept.png");
   background-position-x: 88px;
@@ -89,19 +80,13 @@ $regular_font: Noto Sans;
   background-size: 560px 560px;
 
   & h2 {
-    padding-top: 240px;
-    padding-left: 704px;
-    width: 260px;
+    padding-bottom: 71px;
     font-family: $regular_font;
     font-size: 25px;
     letter-spacing: 2.5px;
     color: $base_color;
   }
   & p {
-    height: 134px;
-    padding-top: 71px;
-    padding-left: 704px;
-    width: 400px;
     font-size: 12px;
     font-family: $regular_font;
     letter-spacing: 0.36px;
@@ -110,48 +95,25 @@ $regular_font: Noto Sans;
 }
 
 .news {
-  width: 100%;
-  margin-top: 279px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 240px;
+  margin: 0 auto 240px auto;
+  text-align: center;
   & h2 {
-    height: 456px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 194px;
-    height: 29px;
-    text-align: center;
+    margin-bottom: 48px;
     font-family: $regular_font;
     font-size: 23px;
     letter-spacing: 2.5px;
     color: $base_color;
   }
   & a {
-    text-align: center;
     text-decoration: none;
-    height: 10px;
-    width: 100%;
-    display: block;
     padding-top: 40px;
-  }
-  & p {
-    font-family: $regular_font;
-    font-size: 17px;
-    margin-top: 144px;
-    text-shadow: 0px 0px 6px #000000e0;
-    color: $furniture_text;
   }
 }
 
 .furnitures {
-  width: 100%;
   display: flex;
   text-align: center;
   justify-content: space-around;
-  padding-top: 80px;
-
-  padding-right: 96px;
 
   & h3 {
     width: 1280px;
@@ -162,6 +124,16 @@ $regular_font: Noto Sans;
     font-size: 18px;
     font-family: $regular_font;
   }
+  & p {
+    position:absolute;
+    left:0;
+    right:0;
+    font-family: $regular_font;
+    font-size: 17px;
+    margin-top: 144px;
+    text-shadow: 0px 0px 6px #000000e0;
+    color: $furniture_text;
+  }
 }
 .furniture1 {
   position: relative;
@@ -169,6 +141,7 @@ $regular_font: Noto Sans;
   height: 320px;
   background-image: url("quelcode_task01/news01/news01.png");
   background-size: 320px 320px;
+
   &::before {
     content: "";
     position: absolute;
@@ -214,11 +187,10 @@ $regular_font: Noto Sans;
     background-size: 320px;
     opacity: 0.6;
   }
+  
 }
 
 .catalog-container {
-  width: 100%;
-  height: 216px;
   text-align: center;
   margin-bottom: 240px;
   & h2 {
@@ -235,22 +207,17 @@ $regular_font: Noto Sans;
   & a {
     display: inline-block;
     width: 342px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding: 19px 0;
     text-align: center;
     border: 1px solid;
     border-radius: 40px;
     text-decoration: none;
-    cursor: default;
     font-size: 18px;
     color: $cblack;
   }
 }
 
 .contact-form {
-  width: 100%;
-  height: 464px;
-  clear: both;
   text-align: center;
   margin-bottom: 240px;
   & h2 {
@@ -265,50 +232,37 @@ $regular_font: Noto Sans;
     align-items: center;
     flex-direction: column;
   }
-  & input {
-    display: block;
-  }
-  & textarea {
-    display: block;
-  }
 }
 
 .name {
-  width: 454px;
-  height: 32px;
   border: 1px solid #707070;
   border-radius: 16px;
   opacity: 0.6;
   color: $base_color;
   margin-bottom: 24px;
+  padding: 10px 330px 10px 16px;
 }
 .email {
-  width: 454px;
-  height: 32px;
   border: 1px solid #707070;
   border-radius: 16px;
   opacity: 0.6;
   margin-bottom: 24px;
+  padding: 10px 330px 10px 16px;
 }
 .faq {
-  width: 454px;
-  height: 200px;
   border: 1px solid #707070;
   border-radius: 16px;
   opacity: 0.6;
   margin-bottom: 40px;
+  padding: 10px 330px 162px 16px;
 }
 .send {
-  width: 161px;
-  height: 32px;
   border: 1px solid #707070;
   border-radius: 16px;
   opacity: 0.6;
+  padding: 7px 60px 6px 60px;
 }
 .recruit-container {
-  
-  width: 100%;
-  height: 192px;
   text-align: center;
   margin-bottom: 320px;
 }
@@ -319,20 +273,22 @@ $regular_font: Noto Sans;
 }
 
 .recruit-text {
-  
   font-size: 15px;
   color: $base_color;
   margin-bottom: 39px;
 }
 
 .recruit-view {
-  
-  
   text-decoration: none;
   font-size: 18px;
   font-size: 15px;
 }
 ul {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
   list-style: none;
   & li {
     font-size: 18px;
@@ -342,23 +298,30 @@ ul {
   }
 }
 .footer-container {
-  
-  width: 100%;
-  height: 240px;
   background: $cblack 0% 0% no-repeat;
+  padding-top: 120px;
+  padding-left: 224px;
+  padding-bottom:80px;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .footer-left {
-  margin-top: 120px;
-  margin-left: 224px;
   object-fit: fill;
 }
 .footer-right {
-  margin-left: 703px;
-  margin-right: 224px;
+  margin-left: 479px;
   display: flex;
   justify-content: space-between;
-}
+  & li{
+    margin-right:32px;
 
+  }
+  
+}
+.footer-contact{
+  margin-right:224px;
+}
 * {
   margin: 0;
 }
