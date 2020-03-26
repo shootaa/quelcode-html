@@ -2,6 +2,19 @@
   overflow: hidden;
 }
 
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+}
+
 .header-left {
   margin-top: 16px;
   margin-left: 96px;
@@ -18,7 +31,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 787px;
+  margin-top: 26px;
   margin-right: 96px;
 }
 
@@ -27,8 +40,9 @@
   font-size: 16px;
 }
 
-.header-right ul li {
-  display: inline;
+.header-right li {
+  margin-right: 52px;
+  font-size: 16px;
 }
 
 .header-home {
@@ -86,6 +100,7 @@
   font-size: 25px;
   letter-spacing: 2.5px;
   color: #3b3b3b;
+  font-weight: normal;
 }
 
 .proposal p {
@@ -93,6 +108,7 @@
   font-family: Noto Sans;
   letter-spacing: 0.36px;
   color: #3b3b3b;
+  line-height: 1.9;
 }
 
 .news {
@@ -101,6 +117,7 @@
 }
 
 .news h2 {
+  font-weight: normal;
   margin-bottom: 48px;
   font-family: Noto Sans;
   font-size: 23px;
@@ -120,6 +137,7 @@
   text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 32px;
 }
 
 .furnitures h3 {
@@ -207,6 +225,7 @@
 }
 
 .catalog-container h2 {
+  font-weight: normal;
   color: #3b3b3b;
   font-size: 24px;
   font-family: Noto Sans;
@@ -217,6 +236,7 @@
   font-size: 15px;
   color: #3b3b3b;
   margin-bottom: 40px;
+  line-height: 1.6;
 }
 
 .catalog-container a {
@@ -224,11 +244,11 @@
   width: 342px;
   padding: 19px 0;
   text-align: center;
-  border: 1px solid;
   border-radius: 40px;
   text-decoration: none;
   font-size: 18px;
   color: #707070;
+  background-color: #d1d1d1;
 }
 
 .contact-form {
@@ -241,6 +261,7 @@
   font-size: 24px;
   font-family: Noto Sans;
   margin-bottom: 47px;
+  font-weight: normal;
 }
 
 .contact-form form {
@@ -285,10 +306,12 @@
 }
 
 .send {
-  border: 1px solid #707070;
   border-radius: 16px;
   opacity: 0.6;
   padding: 7px 60px 6px 60px;
+  background-color: #d1d1d1;
+  font-size: 14px;
+  letter-spacing: 1.4px;
 }
 
 .recruit-container {
@@ -300,12 +323,16 @@
   font-size: 24px;
   color: #3b3b3b;
   margin-bottom: 48px;
+  font-weight: normal;
+  letter-spacing: 2.4px;
 }
 
 .recruit-text {
   font-size: 15px;
   color: #3b3b3b;
   margin-bottom: 39px;
+  letter-spacing: 0.45px;
+  line-height: 1.6;
 }
 
 .recruit-view {
@@ -330,9 +357,7 @@ ul {
 
 ul li {
   font-size: 18px;
-  letter-spacing: 0;
   color: #ffffff;
-  opacity: 1;
 }
 
 .footer-container {

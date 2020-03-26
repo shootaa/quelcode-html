@@ -6,10 +6,17 @@ $cblack: #707070;
 $furniture_text: #ffffff;
 $furniture_color: #000000;
 $furinitutre_shadow: #000000e0;
+$form: #d1d1d1;
 $regular_font: Noto Sans;
 
 .wrapper {
   overflow: hidden;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 .header-left {
   margin-top: 16px;
@@ -21,22 +28,22 @@ $regular_font: Noto Sans;
 .header-right {
   display: flex;
   justify-content: space-between;
-  margin-left: 787px;
+  margin-top:26px;
   margin-right: 96px;
 
   & a {
     text-decoration: none;
     font-size: 16px;
   }
-  & ul {
-    & li {
-      display: inline;
-    }
+  & li {
+    margin-right: 52px;
+    font-size: 16px;
   }
 }
 
 .header-home {
   color: $base_color;
+  
 }
 .header-news {
   color: $header_color;
@@ -85,12 +92,14 @@ $regular_font: Noto Sans;
     font-size: 25px;
     letter-spacing: 2.5px;
     color: $base_color;
+    font-weight: normal;
   }
   & p {
     font-size: 12px;
     font-family: $regular_font;
     letter-spacing: 0.36px;
     color: $base_color;
+    line-height: 1.9;
   }
 }
 
@@ -98,6 +107,7 @@ $regular_font: Noto Sans;
   margin: 0 auto 240px auto;
   text-align: center;
   & h2 {
+    font-weight: normal;
     margin-bottom: 48px;
     font-family: $regular_font;
     font-size: 23px;
@@ -114,6 +124,7 @@ $regular_font: Noto Sans;
   display: flex;
   text-align: center;
   justify-content: space-around;
+  margin-bottom: 32px;
 
   & h3 {
     width: 1280px;
@@ -125,9 +136,9 @@ $regular_font: Noto Sans;
     font-family: $regular_font;
   }
   & p {
-    position:absolute;
-    left:0;
-    right:0;
+    position: absolute;
+    left: 0;
+    right: 0;
     font-family: $regular_font;
     font-size: 17px;
     margin-top: 144px;
@@ -187,13 +198,13 @@ $regular_font: Noto Sans;
     background-size: 320px;
     opacity: 0.6;
   }
-  
 }
 
 .catalog-container {
   text-align: center;
   margin-bottom: 240px;
   & h2 {
+    font-weight: normal;
     color: $base_color;
     font-size: 24px;
     font-family: $regular_font;
@@ -203,17 +214,18 @@ $regular_font: Noto Sans;
     font-size: 15px;
     color: $base_color;
     margin-bottom: 40px;
+    line-height: 1.6;
   }
   & a {
     display: inline-block;
     width: 342px;
     padding: 19px 0;
     text-align: center;
-    border: 1px solid;
     border-radius: 40px;
     text-decoration: none;
     font-size: 18px;
     color: $cblack;
+    background-color: $form;
   }
 }
 
@@ -225,6 +237,7 @@ $regular_font: Noto Sans;
     font-size: 24px;
     font-family: $regular_font;
     margin-bottom: 47px;
+    font-weight: normal;
   }
   & form {
     display: flex;
@@ -257,10 +270,12 @@ $regular_font: Noto Sans;
   padding: 10px 330px 162px 16px;
 }
 .send {
-  border: 1px solid #707070;
   border-radius: 16px;
   opacity: 0.6;
   padding: 7px 60px 6px 60px;
+  background-color: $form;
+  font-size: 14px;
+  letter-spacing: 1.4px;
 }
 .recruit-container {
   text-align: center;
@@ -270,12 +285,17 @@ $regular_font: Noto Sans;
   font-size: 24px;
   color: $base_color;
   margin-bottom: 48px;
+  font-weight: normal;
+  letter-spacing: 2.4px;
 }
 
 .recruit-text {
   font-size: 15px;
   color: $base_color;
   margin-bottom: 39px;
+  letter-spacing: 0.45px;
+  line-height: 1.6;
+  
 }
 
 .recruit-view {
@@ -292,19 +312,17 @@ ul {
   list-style: none;
   & li {
     font-size: 18px;
-    letter-spacing: 0;
     color: $cwhite;
-    opacity: 1;
   }
 }
 .footer-container {
   background: $cblack 0% 0% no-repeat;
   padding-top: 120px;
   padding-left: 224px;
-  padding-bottom:80px;
+  padding-bottom: 80px;
   display: flex;
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer-left {
   object-fit: fill;
@@ -313,14 +331,12 @@ ul {
   margin-left: 479px;
   display: flex;
   justify-content: space-between;
-  & li{
-    margin-right:32px;
-
+  & li {
+    margin-right: 32px;
   }
-  
 }
-.footer-contact{
-  margin-right:224px;
+.footer-contact {
+  margin-right: 224px;
 }
 * {
   margin: 0;
