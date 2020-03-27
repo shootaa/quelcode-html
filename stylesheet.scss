@@ -9,15 +9,13 @@ $furinitutre_shadow: #000000e0;
 $form: #d1d1d1;
 $regular_font: Noto Sans;
 
-.wrapper {
-  overflow: hidden;
-}
+
 .header-container {
-  margin: 16px 0 0 96px;
+  margin: 16px 0 8px 96px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 8px;
+  
 }
 .header-left {
   width: 38px;
@@ -90,7 +88,7 @@ $regular_font: Noto Sans;
 }
 
 .news {
-  margin: 0 auto 240px auto;
+  margin: 0 auto 240px;
   text-align: center;
   & h2 {
     font-weight: normal;
@@ -111,15 +109,7 @@ $regular_font: Noto Sans;
   justify-content: space-around;
   margin-bottom: 32px;
 
-  & h3 {
-    width: 1280px;
-    height: 480px;
-    clear: both;
-    letter-spacing: 1.05px;
-    color: $base_color;
-    font-size: 18px;
-    font-family: $regular_font;
-  }
+ 
   & p {
     position: absolute;
     top: 144px;
@@ -136,7 +126,7 @@ $regular_font: Noto Sans;
   width: 320px;
   height: 320px;
   background-image: url("quelcode_task01/news01/news01.png");
-  background-size: 320px 320px;
+  
 
   &::before {
     content: "";
@@ -206,7 +196,7 @@ $regular_font: Noto Sans;
   }
 }
 
-.name {
+.name,.email,.faq {
   border: 1px solid #707070;
   border-radius: 16px;
   opacity: 0.6;
@@ -214,22 +204,10 @@ $regular_font: Noto Sans;
   margin-bottom: 24px;
   padding: 10px 27px;
   width: 400px;
-}
-.email {
-  border: 1px solid #707070;
-  border-radius: 16px;
-  opacity: 0.6;
-  margin-bottom: 24px;
-  padding: 10px 27px;
-  width: 400px;
+font-size: 12px;
 }
 .faq {
-  border: 1px solid #707070;
-  border-radius: 16px;
-  opacity: 0.6;
   margin-bottom: 40px;
-  padding: 10px 27px;
-  width: 400px;
 }
 .send {
   border-radius: 16px;
@@ -292,7 +270,6 @@ ul {
     margin-right: 32px;
   }
 }
-
 * {
   margin: 0;
 }
