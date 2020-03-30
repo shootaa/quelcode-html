@@ -1,0 +1,327 @@
+.header-container {
+  margin: 16px 0 8px 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-left {
+  width: 38px;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-right a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header-right li {
+  margin-right: 52px;
+  font-size: 16px;
+}
+
+.header-home,
+.header-news,
+.header-recruit,
+.header-contact {
+  color: #3b3b3b;
+}
+
+.top-container {
+  background-image: url("quelcode_task01/home_top/home_top.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 744px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.top-container h1 {
+  position: absolute;
+  top: 274px;
+  background-color: #ffffff;
+  font-size: 53px;
+  font-family: Noto Sans;
+  color: #918f89;
+  opacity: 0.8;
+  padding: 32px 32px 32px 88px;
+}
+
+.proposal {
+  position: relative;
+  padding: 240px 0 0 704px;
+  height: 560px;
+  background-image: url("quelcode_task01/concept/concept.png");
+  background-position-x: 88px;
+  background-repeat: no-repeat;
+  background-size: 560px 560px;
+}
+
+.proposal h2 {
+  padding-bottom: 71px;
+  font-family: Noto Sans;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+  color: #3b3b3b;
+  font-weight: normal;
+}
+
+.proposal p {
+  font-size: 12px;
+  font-family: Noto Sans;
+  letter-spacing: 0.36px;
+  color: #3b3b3b;
+  line-height: 1.9;
+}
+
+.news {
+  margin: 0 auto 240px;
+  text-align: center;
+}
+
+.news h2 {
+  font-weight: normal;
+  margin-bottom: 48px;
+  font-family: Noto Sans;
+  font-size: 23px;
+  letter-spacing: 2.5px;
+  color: #3b3b3b;
+}
+
+.news a {
+  text-decoration: none;
+}
+
+.furnitures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 32px;
+}
+
+.furnitures p {
+  position: absolute;
+  top: 144px;
+  left: 0;
+  right: 0;
+  font-family: Noto Sans;
+  font-size: 17px;
+  text-shadow: 0px 0px 6px #000000e0;
+  color: #ffffff;
+}
+
+.furniture1, .furniture2, .furniture3 {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background-image: url("quelcode_task01/news01/news01.png");
+}
+
+.furniture1::before, .furniture2::before, .furniture3::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.furniture1 {
+  background-image: url("quelcode_task01/news01/news01.png");
+}
+
+.furniture2 {
+  background-image: url("quelcode_task01/news02/news02.png");
+}
+
+.furniture3 {
+  background-image: url("quelcode_task01/news03/news03.png");
+}
+
+.catalog-container {
+  text-align: center;
+  margin-bottom: 240px;
+}
+
+.catalog-container h2 {
+  font-weight: normal;
+  color: #3b3b3b;
+  font-size: 24px;
+  font-family: Noto Sans;
+  margin-bottom: 48px;
+}
+
+.catalog-container p {
+  font-size: 15px;
+  color: #3b3b3b;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.catalog-container a {
+  display: inline-block;
+  width: 342px;
+  padding: 19px 0;
+  text-align: center;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #707070;
+  background-color: #d1d1d1;
+}
+
+.contact-form {
+  text-align: center;
+  margin-bottom: 240px;
+}
+
+.contact-form h2 {
+  color: #3b3b3b;
+  font-size: 24px;
+  font-family: Noto Sans;
+  margin-bottom: 47px;
+  font-weight: normal;
+}
+
+.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.name, .email, .faq {
+  border: 1px solid #707070;
+  border-radius: 16px;
+  opacity: 0.6;
+  color: #3b3b3b;
+  margin-bottom: 24px;
+  padding: 10px 27px;
+  width: 400px;
+  font-size: 12px;
+}
+
+.faq {
+  margin-bottom: 40px;
+}
+
+.send {
+  border-radius: 16px;
+  opacity: 0.6;
+  padding: 7px 60px 6px 60px;
+  background-color: #d1d1d1;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+
+.recruit-container {
+  text-align: center;
+  margin-bottom: 320px;
+}
+
+.recruit-head {
+  font-size: 24px;
+  color: #3b3b3b;
+  margin-bottom: 48px;
+  font-weight: normal;
+  letter-spacing: 2.4px;
+}
+
+.recruit-text {
+  font-size: 15px;
+  color: #3b3b3b;
+  margin-bottom: 39px;
+  letter-spacing: 0.45px;
+  line-height: 1.6;
+}
+
+.recruit-view {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+ul {
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  list-style: none;
+}
+
+ul li {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-container {
+  background: #707070 0% 0% no-repeat;
+  padding: 120px 224px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-left {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-right li {
+  margin-right: 32px;
+}
+
+* {
+  margin: 0;
+}
+/*# sourceMappingURL=stylesheet.css.map */
