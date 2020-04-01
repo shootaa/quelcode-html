@@ -345,6 +345,7 @@ ul li {
 }
 
 .top-container_news {
+  position: relative;
   background-image: url("quelcode_task01/news_top/news_top.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -355,8 +356,9 @@ ul li {
 }
 
 .top-container_news h1 {
-  padding-top: 191px;
-  padding-left: 228px;
+  position: absolute;
+  top: 191px;
+  left: 228px;
   font-size: 30px;
   font-family: Noto Sans;
   letter-spacing: 3px;
@@ -414,7 +416,8 @@ ul li {
   font-weight: normal;
 }
 
-p {
+h2 {
+  font-weight: normal;
   text-align: center;
   font-size: 23px;
   color: #3b3b3b;
@@ -422,8 +425,6 @@ p {
 }
 
 .recruit_table {
-  width: 640px;
-  height: 624px;
   border: 1px solid #707070;
   border-collapse: collapse;
   color: #3b3b3b;
@@ -439,6 +440,12 @@ p {
 .recruit_table td {
   border: 1px solid #707070;
   padding-left: 40px;
+  padding-right: 224px;
+}
+
+.recruit_table li {
+  color: #3b3b3b;
+  font-size: 14px;
 }
 
 .recruit_table th {
@@ -446,6 +453,7 @@ p {
   border: 1px solid #707070;
   font-size: 16px;
   font-weight: normal;
+  padding: 136px 48px 136px 48px;
 }
 
 .header-contact4 {

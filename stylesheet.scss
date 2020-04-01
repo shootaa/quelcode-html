@@ -286,6 +286,7 @@ ul {
   color: $header_color;
 }
 .top-container_news {
+  position:relative;
   background-image: url("quelcode_task01/news_top/news_top.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,8 +295,9 @@ ul {
   margin-bottom: 160px;
   background-position: center;
   & h1 {
-    padding-top: 191px;
-    padding-left: 228px;
+    position: absolute;
+    top:191px;
+    left:228px;
     font-size: 30px;
     font-family: $regular_font;
     letter-spacing: 3px;
@@ -349,15 +351,15 @@ ul {
     font-weight: normal;
   }
 }
-p {
+h2 {
+  font-weight: normal;
   text-align: center;
   font-size: 23px;
   color:$base_color;
   margin-bottom: 32px;
 }
 .recruit_table {
-  width: 640px;
-  height: 624px;
+  
   border: 1px solid $cblack;
   border-collapse: collapse;
   color: $base_color;
@@ -369,16 +371,23 @@ p {
   
   & span {
     font-size: 16px;
+   
   }
   & td {
     border: 1px solid $cblack;
     padding-left: 40px;
+    padding-right: 224px;
+  }
+  & li{
+    color:$base_color;
+    font-size: 14px;
   }
   & th {
     background-color: rgba(112, 112, 112, 0.3);
     border: 1px solid $cblack;
     font-size: 16px;
     font-weight: normal;
+    padding:136px 48px 136px 48px;
   }
 }
 
