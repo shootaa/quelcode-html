@@ -132,18 +132,18 @@
   color: #ffffff;
 }
 
-.furniture1,
-.furniture2,
-.furniture3 {
+.kauti,
+.chair,
+.table {
   position: relative;
   width: 320px;
   height: 320px;
   background-image: url("quelcode_task01/home_top/news01/news01.png");
 }
 
-.furniture1::before,
-.furniture2::before,
-.furniture3::before {
+.kauti::before,
+.chair::before,
+.table::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -154,15 +154,15 @@
   opacity: 0.6;
 }
 
-.furniture1 {
+.kauti {
   background-image: url("quelcode_task01/home_top/news01/news01.png");
 }
 
-.furniture2 {
+.chair {
   background-image: url("quelcode_task01/home_top/news02/news02.png");
 }
 
-.furniture3 {
+.table {
   background-image: url("quelcode_task01/home_top/news03/news03.png");
 }
 
@@ -334,13 +334,13 @@ ul li {
   margin: 0;
 }
 
-.header-news2 {
+.header-news-news {
   color: #3b3b3b;
 }
 
-.header-home2,
-.header-recruit2,
-.header-contact2 {
+.header-home-news,
+.header-recruit-news,
+.header-contact-news {
   color: #b2b2b2;
 }
 
@@ -385,13 +385,13 @@ ul li {
   text-decoration: none;
 }
 
-.header-recruit3 {
+.header-recruit-recruit {
   color: #3b3b3b;
 }
 
-.header-home3,
-.header-news3,
-.header-contact3 {
+.header-home-recruit,
+.header-news-recruit,
+.header-contact-recruit {
   color: #b2b2b2;
 }
 
@@ -456,13 +456,13 @@ h2 {
   padding: 136px 48px 136px 48px;
 }
 
-.header-contact4 {
+.header-contact-contact {
   color: #3b3b3b;
 }
 
-.header-home4,
-.header-news4,
-.header-recruit4 {
+.header-home-contact,
+.header-news-contact,
+.header-recruit-contact {
   color: #b2b2b2;
 }
 
@@ -487,12 +487,12 @@ h2 {
   font-weight: normal;
 }
 
-.contact-form2 {
+.contact-form-next {
   text-align: center;
   margin-bottom: 320px;
 }
 
-.contact-form2 h2 {
+.contact-form-next h2 {
   color: #3b3b3b;
   font-size: 24px;
   font-family: Noto Sans;
@@ -500,13 +500,13 @@ h2 {
   font-weight: normal;
 }
 
-.contact-form2 p {
+.contact-form-next p {
   font-size: 15px;
   color: #3b3b3b;
   margin-bottom: 72px;
 }
 
-.contact-form2 form {
+.contact-form-next form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
