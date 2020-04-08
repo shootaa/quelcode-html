@@ -30,7 +30,7 @@ $regular_font: Noto Sans;
     font-size: 16px;
   }
 }
-.header-home{
+.header-home {
   color: $base_color;
 }
 .header-news,
@@ -102,6 +102,20 @@ $regular_font: Noto Sans;
     text-decoration: none;
   }
 }
+.view {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid$base_color;
+    border-right: 1px solid $base_color;
+    transform: rotate(45deg);
+  }
+}
 
 .furnitures {
   display: flex;
@@ -127,7 +141,7 @@ $regular_font: Noto Sans;
   width: 320px;
   height: 320px;
   background-image: url("quelcode_task01/home_top/news01/news01.png");
-
+  
   &::before {
     content: "";
     position: absolute;
@@ -242,6 +256,18 @@ $regular_font: Noto Sans;
 .recruit-view {
   text-decoration: none;
   font-size: 18px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid$base_color;
+    border-right: 1px solid $base_color;
+    transform: rotate(45deg);
+  }
 }
 ul {
   margin-block-start: 0px;
@@ -277,7 +303,7 @@ ul {
 }
 
 //news
-.header-news-news{
+.header-news-news {
   color: $base_color;
 }
 .header-home-news,
@@ -285,8 +311,8 @@ ul {
 .header-contact-news {
   color: $header_color;
 }
-.top-container_news {
-  position:relative;
+.top-container-news {
+  position: relative;
   background-image: url("quelcode_task01/news_top/news_top.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -296,8 +322,8 @@ ul {
   background-position: center;
   & h1 {
     position: absolute;
-    top:191px;
-    left:228px;
+    top: 191px;
+    left: 228px;
     font-size: 30px;
     font-family: $regular_font;
     letter-spacing: 3px;
@@ -306,7 +332,7 @@ ul {
     font-weight: normal;
   }
 }
-.news_news {
+.news-news {
   margin: 0 auto 320px;
   text-align: center;
   & h2 {
@@ -323,7 +349,7 @@ ul {
 }
 
 //recruit
-.header-recruit-recruit{
+.header-recruit-recruit {
   color: $base_color;
 }
 .header-home-recruit,
@@ -331,7 +357,7 @@ ul {
 .header-contact-recruit {
   color: $header_color;
 }
-.top-container_recruit {
+.top-container-recruit {
   background-image: url("quelcode_task01/recruit_top\ \(1\)/recruit_top.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,35 +377,37 @@ ul {
     font-weight: normal;
   }
 }
-h2 {
+.recruit-info {
   font-weight: normal;
   text-align: center;
   font-size: 23px;
-  color:$base_color;
+  color: $base_color;
   margin-bottom: 32px;
 }
-.recruit_table {
-  
+.recruit-table {
   border: 1px solid $cblack;
   border-collapse: collapse;
   color: $base_color;
   font-size: 14px;
   border-radius: 4px;
-  margin:0 auto 320px auto;
+  margin: 0 auto 320px auto;
 
-  
-  
-  & span {
+  & h2 {
+    display: inline-block;
     font-size: 16px;
-   
+    font-weight: normal;
   }
   & td {
     border: 1px solid $cblack;
     padding-left: 40px;
     padding-right: 224px;
   }
-  & li{
-    color:$base_color;
+  & ul { 
+    padding-inline-start: 20px;
+  }
+  & li {
+  list-style:disc ;
+    color: $base_color;
     font-size: 14px;
   }
   & th {
@@ -387,21 +415,20 @@ h2 {
     border: 1px solid $cblack;
     font-size: 16px;
     font-weight: normal;
-    padding:136px 48px 136px 48px;
+    padding: 136px 48px 136px 48px;
   }
 }
 
 //contact
-.header-contact-contact{
+.header-contact-contact {
   color: $base_color;
 }
 .header-home-contact,
 .header-news-contact,
-.header-recruit-contact
- {
+.header-recruit-contact {
   color: $header_color;
 }
-.top-container_contact{
+.top-container-contact {
   background-image: url("quelcode_task01/contact_top/contact_top.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -419,10 +446,9 @@ h2 {
     opacity: 0.8;
     font-weight: normal;
   }
-
 }
 
-.contact-form-next{
+.contact-form-next {
   text-align: center;
   margin-bottom: 320px;
   & h2 {
@@ -432,9 +458,9 @@ h2 {
     margin-bottom: 40px;
     font-weight: normal;
   }
-  & p{
+  & p {
     font-size: 15px;
-    color:$base_color;
+    color: $base_color;
     margin-bottom: 72px;
   }
   & form {
@@ -443,5 +469,4 @@ h2 {
     align-items: center;
     flex-direction: column;
   }
-
 }
