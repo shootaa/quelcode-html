@@ -464,10 +464,13 @@ ul li {
   margin: 0 auto 320px auto;
 }
 
-.recruit-table h2 {
-  display: inline-block;
-  font-weight: normal;
+.recruit-table .title {
   font-size: 16px;
+  display: inline-block;
+}
+
+.recruit-table p {
+  font-size: 14px;
 }
 
 .recruit-table td {

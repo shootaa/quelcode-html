@@ -392,10 +392,13 @@ ul {
   border-radius: 4px;
   margin: 0 auto 320px auto;
 
-  & h2 {
-    display: inline-block;
-    font-weight: normal;
+  .title{
     font-size: 16px;
+    display: inline-block;
+  }
+  & p {
+    
+    font-size: 14px;
   }
   & td {
     border: 1px solid $cblack;
