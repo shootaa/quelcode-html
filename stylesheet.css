@@ -34,11 +34,14 @@
   font-size: 16px;
 }
 
-.header-home,
+.header-home {
+  color: #3b3b3b;
+}
+
 .header-news,
 .header-recruit,
 .header-contact {
-  color: #3b3b3b;
+  color: #b2b2b2;
 }
 
 .top-container {
@@ -67,7 +70,7 @@
   position: relative;
   padding: 240px 0 0 704px;
   height: 560px;
-  background-image: url("quelcode_task01/concept/concept.png");
+  background-image: url("quelcode_task01/home_top/concept/concept.png");
   background-position-x: 88px;
   background-repeat: no-repeat;
   background-size: 560px 560px;
@@ -108,6 +111,23 @@
   text-decoration: none;
 }
 
+.view {
+  position: relative;
+}
+
+.view::before {
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #3b3b3b;
+  border-right: 1px solid #3b3b3b;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .furnitures {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,14 +149,18 @@
   color: #ffffff;
 }
 
-.furniture1, .furniture2, .furniture3 {
+.kauti,
+.chair,
+.table {
   position: relative;
   width: 320px;
   height: 320px;
-  background-image: url("quelcode_task01/news01/news01.png");
+  background-image: url("quelcode_task01/home_top/news01/news01.png");
 }
 
-.furniture1::before, .furniture2::before, .furniture3::before {
+.kauti::before,
+.chair::before,
+.table::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -147,16 +171,16 @@
   opacity: 0.6;
 }
 
-.furniture1 {
-  background-image: url("quelcode_task01/news01/news01.png");
+.kauti {
+  background-image: url("quelcode_task01/home_top/news01/news01.png");
 }
 
-.furniture2 {
-  background-image: url("quelcode_task01/news02/news02.png");
+.chair {
+  background-image: url("quelcode_task01/home_top/news02/news02.png");
 }
 
-.furniture3 {
-  background-image: url("quelcode_task01/news03/news03.png");
+.table {
+  background-image: url("quelcode_task01/home_top/news03/news03.png");
 }
 
 .catalog-container {
@@ -220,7 +244,9 @@
           flex-direction: column;
 }
 
-.name, .email, .faq {
+.name,
+.email,
+.faq {
   border: 1px solid #707070;
   border-radius: 16px;
   opacity: 0.6;
@@ -268,6 +294,20 @@
 .recruit-view {
   text-decoration: none;
   font-size: 18px;
+  position: relative;
+}
+
+.recruit-view::before {
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #3b3b3b;
+  border-right: 1px solid #3b3b3b;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 ul {
@@ -323,5 +363,204 @@ ul li {
 
 * {
   margin: 0;
+}
+
+.header-news-news {
+  color: #3b3b3b;
+}
+
+.header-home-news,
+.header-recruit-news,
+.header-contact-news {
+  color: #b2b2b2;
+}
+
+.top-container-news {
+  position: relative;
+  background-image: url("quelcode_task01/news_top/news_top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 456px;
+  margin-bottom: 160px;
+  background-position: center;
+}
+
+.top-container-news h1 {
+  position: absolute;
+  top: 191px;
+  left: 228px;
+  font-size: 30px;
+  font-family: Noto Sans;
+  letter-spacing: 3px;
+  color: #918f89;
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.news-news {
+  margin: 0 auto 320px;
+  text-align: center;
+}
+
+.news-news h2 {
+  font-weight: normal;
+  margin-bottom: 48px;
+  font-family: Noto Sans;
+  font-size: 23px;
+  letter-spacing: 2.5px;
+  color: #3b3b3b;
+}
+
+.news-news a {
+  text-decoration: none;
+}
+
+.header-recruit-recruit {
+  color: #3b3b3b;
+}
+
+.header-home-recruit,
+.header-news-recruit,
+.header-contact-recruit {
+  color: #b2b2b2;
+}
+
+.top-container-recruit {
+  background-image: url("quelcode_task01/recruit_top (1)/recruit_top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 456px;
+  margin-bottom: 161px;
+  background-position: center;
+}
+
+.top-container-recruit h1 {
+  padding-top: 191px;
+  padding-left: 228px;
+  font-size: 30px;
+  font-family: Noto Sans;
+  letter-spacing: 3px;
+  color: #918f89;
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.recruit-info {
+  font-weight: normal;
+  text-align: center;
+  font-size: 23px;
+  color: #3b3b3b;
+  margin-bottom: 32px;
+}
+
+.recruit-table {
+  border: 1px solid #707070;
+  border-collapse: collapse;
+  color: #3b3b3b;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 0 auto 320px auto;
+}
+
+.recruit-table .title {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.recruit-table p {
+  font-size: 14px;
+}
+
+.recruit-table td {
+  border: 1px solid #707070;
+  padding-left: 40px;
+  padding-right: 224px;
+}
+
+.recruit-table ul {
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.recruit-table li {
+  list-style: disc;
+  color: #3b3b3b;
+  font-size: 14px;
+}
+
+.recruit-table th {
+  background-color: rgba(112, 112, 112, 0.3);
+  border: 1px solid #707070;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 136px 48px 136px 48px;
+}
+
+.header-contact-contact {
+  color: #3b3b3b;
+}
+
+.header-home-contact,
+.header-news-contact,
+.header-recruit-contact {
+  color: #b2b2b2;
+}
+
+.top-container-contact {
+  background-image: url("quelcode_task01/contact_top/contact_top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 456px;
+  margin-bottom: 161px;
+  background-position: center;
+}
+
+.top-container-contact h1 {
+  padding-top: 191px;
+  padding-left: 228px;
+  font-size: 30px;
+  font-family: Noto Sans;
+  letter-spacing: 3px;
+  color: #ffffff;
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.contact-form-next {
+  text-align: center;
+  margin-bottom: 320px;
+}
+
+.contact-form-next h2 {
+  color: #3b3b3b;
+  font-size: 24px;
+  font-family: Noto Sans;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.contact-form-next p {
+  font-size: 15px;
+  color: #3b3b3b;
+  margin-bottom: 72px;
+}
+
+.contact-form-next form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=stylesheet.css.map */
