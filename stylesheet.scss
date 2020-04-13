@@ -165,8 +165,6 @@ $regular_font: Noto Sans;
   }
 }
 .proposal {
-  // position: relative;
-  //  padding: 240px 0 0 704px;
   margin-bottom: 240px;
   height: 520px;
   background-image: url("quelcode_task01/home_top/concept/concept.png");
@@ -333,6 +331,7 @@ $regular_font: Noto Sans;
 }
 .faq {
   margin-bottom: 40px;
+  padding-bottom: 131px;
 }
 .send {
   border-radius: 30px;
@@ -391,11 +390,18 @@ ul {
   }
 }
 .footer-container {
-  background: $cblack 0% 0% no-repeat;
+  background: $top_color 0% 0% no-repeat;
   padding: 72px 161.66px 128px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.copyright{
+  text-align: center;
+  color:$cwhite;
+  font-size: 10px;
+  background-color:$top_color;
+  padding-bottom: 32px;
 }
 .footer-left {
   object-fit: fill;
@@ -489,6 +495,13 @@ ul {
   }
   .footer-container {
     padding: 120px 224px 80px;
+  }
+  .footer-right {
+    display: flex;
+    justify-content: space-between;
+    & li {
+      margin-right: 32px;
+    }
   }
   * {
     margin: 0;

@@ -380,6 +380,7 @@
 
 .faq {
   margin-bottom: 40px;
+  padding-bottom: 131px;
 }
 
 .send {
@@ -451,7 +452,7 @@ ul li {
 }
 
 .footer-container {
-  background: #707070 0% 0% no-repeat;
+  background: #918f89 0% 0% no-repeat;
   padding: 72px 161.66px 128px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,6 +463,14 @@ ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.copyright {
+  text-align: center;
+  color: #ffffff;
+  font-size: 10px;
+  background-color: #918f89;
+  padding-bottom: 32px;
 }
 
 .footer-left {
@@ -570,6 +579,17 @@ ul li {
   }
   .footer-container {
     padding: 120px 224px 80px;
+  }
+  .footer-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-right li {
+    margin-right: 32px;
   }
   * {
     margin: 0;
