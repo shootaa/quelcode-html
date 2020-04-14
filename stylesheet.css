@@ -376,6 +376,7 @@
   padding: 10px 27px;
   width: 286px;
   font-size: 12px;
+  font-family: Noto Sans;
 }
 
 .faq {
@@ -389,6 +390,7 @@
   padding: 12px 64px 12px 64px;
   background-color: #d1d1d1;
   font-size: 14px;
+  font-family: Noto Sans;
   letter-spacing: 1.4px;
 }
 
@@ -469,8 +471,8 @@ ul li {
   text-align: center;
   color: #ffffff;
   font-size: 10px;
-  background-color: #918f89;
-  padding-bottom: 32px;
+  position: absolute;
+  margin-top: 114px;
 }
 
 .footer-left {
@@ -590,6 +592,10 @@ ul li {
   }
   .footer-right li {
     margin-right: 32px;
+  }
+  .copyright {
+    position: absolute;
+    margin-top: 81px;
   }
   * {
     margin: 0;

@@ -328,6 +328,7 @@ $regular_font: Noto Sans;
   padding: 10px 27px;
   width: 286px;
   font-size: 12px;
+  font-family:$regular_font;
 }
 .faq {
   margin-bottom: 40px;
@@ -339,6 +340,7 @@ $regular_font: Noto Sans;
   padding: 12px 64px 12px 64px;
   background-color: $form;
   font-size: 14px;
+  font-family: $regular_font;
   letter-spacing: 1.4px;
 }
 .recruit-container {
@@ -400,8 +402,8 @@ ul {
   text-align: center;
   color:$cwhite;
   font-size: 10px;
-  background-color:$top_color;
-  padding-bottom: 32px;
+  position:absolute;
+  margin-top: 114px;
 }
 .footer-left {
   object-fit: fill;
@@ -502,6 +504,11 @@ ul {
     & li {
       margin-right: 32px;
     }
+  }
+  .copyright{
+    
+    position:absolute;
+    margin-top: 81px;
   }
   * {
     margin: 0;
