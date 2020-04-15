@@ -233,9 +233,10 @@ $regular_font: Noto Sans;
     left: 0;
     right: 0;
     font-family: $regular_font;
-    font-size: 17px;
+    font-size: 15px;
     text-shadow: 0px 0px 6px #000000e0;
     color: $cwhite;
+    letter-spacing: -0.75px;
   }
 }
 .kauti,
@@ -328,7 +329,7 @@ $regular_font: Noto Sans;
   padding: 10px 27px;
   width: 286px;
   font-size: 12px;
-  font-family:$regular_font;
+  font-family: $regular_font;
 }
 .faq {
   margin-bottom: 40px;
@@ -398,14 +399,17 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-.copyright{
+.copyright {
   text-align: center;
-  color:$cwhite;
+  color: $cwhite;
   font-size: 10px;
-  position:absolute;
+  position: absolute;
   margin-top: 114px;
+  left: 0;
+  right: 0;
 }
 .footer-left {
+  height: 32px;
   object-fit: fill;
   text-align: center;
 }
@@ -416,6 +420,179 @@ ul {
     margin-right: 32px;
   }
 }
+
+//news
+.header-news-news {
+  color: $base_color;
+}
+.header-home-news,
+.header-recruit-news,
+.header-contact-news {
+  color: $header_color;
+}
+
+.top-container-news {
+  position: relative;
+  background-image: url("quelcode_task01/news_top_sp/news_top_sp.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 648px;
+  margin-bottom: 160px;
+  background-position: center;
+  & h1 {
+    position: absolute;
+    top: 256px;
+    left: 148.5px;
+    font-size: 25px;
+    font-family: $regular_font;
+    letter-spacing: 3px;
+    color: $base_color;
+    opacity: 0.8;
+    font-weight: normal;
+  }
+}
+.news-news {
+  margin: 0 auto 320px;
+  text-align: center;
+  & h2 {
+    font-weight: normal;
+    margin-bottom: 48px;
+    font-family: $regular_font;
+    font-size: 22px;
+    letter-spacing: 2.5px;
+    color: $base_color;
+  }
+  & a {
+    text-decoration: none;
+  }
+}
+//recruit
+.header-recruit-recruit {
+  color: $base_color;
+}
+.header-home-recruit,
+.header-news-recruit,
+.header-contact-recruit {
+  color: $header_color;
+}
+.top-container-recruit {
+  background-image: url("quelcode_task01/recruit_top_sp/recruit_top_sp.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 648px;
+  margin-bottom: 160px;
+  background-position: center;
+
+  & h1 {
+    padding-top: 200px;
+    padding-left: 119px;
+    font-size: 25px;
+    font-family: $regular_font;
+    letter-spacing: 3px;
+    color: $base_color;
+    opacity: 0.8;
+    font-weight: normal;
+  }
+}
+.recruit-info {
+  font-weight: normal;
+  text-align: center;
+  font-size: 23px;
+  color: $base_color;
+  margin-bottom: 32px;
+}
+.recruit-table {
+  border: 1px solid $cblack;
+  border-collapse: collapse;
+  color: $base_color;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 0 auto 256px auto;
+
+  .title {
+    font-size: 15px;
+    display: inline-block;
+  }
+  & p {
+    font-size: 13px;
+  }
+  & td {
+    border: 1px solid $cblack;
+    padding-left: 20px;
+    padding-right: 17px;
+  }
+  & ul {
+    padding-inline-start: 20px;
+  }
+  & li {
+    list-style: disc;
+    color: $base_color;
+    font-size: 13px;
+  }
+  & th {
+    background-color: rgba(112, 112, 112, 0.3);
+    border: 1px solid $cblack;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 145px 5px;
+  }
+}
+  //contact
+  .header-contact-contact {
+    color: $base_color;
+  }
+  .header-home-contact,
+  .header-news-contact,
+  .header-recruit-contact {
+    color: $header_color;
+  }
+  .top-container-contact {
+    background-image: url("quelcode_task01/contact_top_sp/contact_top_sp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 648px;
+    margin-bottom: 160px;
+    background-position: center;
+    & h1 {
+      padding-top: 232px;
+      padding-left: 119px;
+      font-size: 25px;
+      font-family: $regular_font;
+      letter-spacing: 3px;
+      color: $cwhite;
+      opacity: 0.8;
+      font-weight: normal;
+    }
+  }
+
+  .contact-form-next {
+    text-align: center;
+    margin-bottom: 320px;
+    & p {
+      display: none;
+    }
+    & form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+  }
+  .form-title-responsive{
+    color: $base_color;
+    font-size: 24px;
+    font-family: $regular_font;
+    margin-bottom: 40px;
+    font-weight: normal;
+  }
+  .form-title-pc{
+    display: none;
+  }
+
 @media screen and (min-width: 376px) {
   .header-container {
     background-color: $cwhite;
@@ -464,7 +641,6 @@ ul {
       top: 274px;
       background-color: $cwhite;
       font-size: 53px;
-      font-family: $regular_font;
       padding: 32px 32px 32px 88px;
       display: flex;
     }
@@ -489,11 +665,17 @@ ul {
   }
   .furnitures {
     flex-direction: row;
+    & p {
+      font-size: 17px;
+    }
   }
   .name,
   .email,
   .faq {
     width: 400px;
+  }
+  .send{
+    padding:7px 60px 6px 60px;
   }
   .footer-container {
     padding: 120px 224px 80px;
@@ -505,9 +687,8 @@ ul {
       margin-right: 32px;
     }
   }
-  .copyright{
-    
-    position:absolute;
+  .copyright {
+    position: absolute;
     margin-top: 81px;
   }
   * {
@@ -515,173 +696,91 @@ ul {
   }
 
   //news
-  .header-news-news {
-    color: $base_color;
-  }
-  .header-home-news,
-  .header-recruit-news,
-  .header-contact-news {
-    color: $header_color;
-  }
+  
   .top-container-news {
-    position: relative;
     background-image: url("quelcode_task01/news_top/news_top.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
     height: 456px;
     margin-bottom: 160px;
-    background-position: center;
     & h1 {
-      position: absolute;
       top: 191px;
       left: 228px;
       font-size: 30px;
-      font-family: $regular_font;
-      letter-spacing: 3px;
       color: $top_color;
-      opacity: 0.8;
-      font-weight: normal;
     }
   }
   .news-news {
-    margin: 0 auto 320px;
-    text-align: center;
     & h2 {
-      font-weight: normal;
-      margin-bottom: 48px;
-      font-family: $regular_font;
       font-size: 23px;
-      letter-spacing: 2.5px;
-      color: $base_color;
-    }
-    & a {
-      text-decoration: none;
     }
   }
 
   //recruit
-  .header-recruit-recruit {
-    color: $base_color;
-  }
-  .header-home-recruit,
-  .header-news-recruit,
-  .header-contact-recruit {
-    color: $header_color;
-  }
+  
+  
   .top-container-recruit {
     background-image: url("quelcode_task01/recruit_top\ \(1\)/recruit_top.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
     height: 456px;
     margin-bottom: 161px;
-    background-position: center;
 
     & h1 {
       padding-top: 191px;
       padding-left: 228px;
       font-size: 30px;
-      font-family: $regular_font;
-      letter-spacing: 3px;
-      color: $top_color;
-      opacity: 0.8;
-      font-weight: normal;
     }
   }
-  .recruit-info {
-    font-weight: normal;
-    text-align: center;
-    font-size: 23px;
-    color: $base_color;
-    margin-bottom: 32px;
-  }
   .recruit-table {
-    border: 1px solid $cblack;
-    border-collapse: collapse;
-    color: $base_color;
-    font-size: 14px;
-    border-radius: 4px;
     margin: 0 auto 320px auto;
 
     .title {
       font-size: 16px;
-      display: inline-block;
     }
     & p {
       font-size: 14px;
     }
     & td {
-      border: 1px solid $cblack;
       padding-left: 40px;
       padding-right: 224px;
     }
-    & ul {
-      padding-inline-start: 20px;
-    }
     & li {
-      list-style: disc;
-      color: $base_color;
       font-size: 14px;
     }
     & th {
-      background-color: rgba(112, 112, 112, 0.3);
-      border: 1px solid $cblack;
       font-size: 16px;
-      font-weight: normal;
       padding: 136px 48px 136px 48px;
     }
   }
 
   //contact
-  .header-contact-contact {
-    color: $base_color;
-  }
-  .header-home-contact,
-  .header-news-contact,
-  .header-recruit-contact {
-    color: $header_color;
-  }
   .top-container-contact {
     background-image: url("quelcode_task01/contact_top/contact_top.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
     height: 456px;
     margin-bottom: 161px;
-    background-position: center;
     & h1 {
       padding-top: 191px;
       padding-left: 228px;
       font-size: 30px;
-      font-family: $regular_font;
-      letter-spacing: 3px;
-      color: $cwhite;
-      opacity: 0.8;
-      font-weight: normal;
     }
   }
 
   .contact-form-next {
-    text-align: center;
-    margin-bottom: 320px;
-    & h2 {
-      color: $base_color;
-      font-size: 24px;
-      font-family: $regular_font;
-      margin-bottom: 40px;
-      font-weight: normal;
-    }
     & p {
+      display: block;
       font-size: 15px;
       color: $base_color;
       margin-bottom: 72px;
     }
-    & form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+    
+  }
+  .form-title-responsive{
+    display: none;
+  }
+  .form-title-pc{
+    display: block;
+    color: $base_color;
+    font-size: 24px;
+    font-family: $regular_font;
+    margin-bottom: 40px;
+    font-weight: normal;
+    
   }
 }
